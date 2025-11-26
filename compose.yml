@@ -18,6 +18,7 @@ services:
       driver: local # cannot log to self using default
     environment:
       ACCEPT_EULA: Y
+      SEQ_FIRSTRUN_NOAUTHENTICATION: true # ONLY DO THIS LOCALLY
     restart: unless-stopped
     volumes:
       - type: volume
